@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checks": [
+    "source hashes",
+    "cohort counts",
+    "cross-experiment baseline equality",
+    "staged/random measurement budgets",
+    "endpoint acquisition",
+    "error-transition reconciliation",
+    "calibration denominators",
+    "subgroup denominators",
+    "negative-control count"
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "status": "Post-hoc exploratory synthetic-data error analysis",
+  "repeats": [
+    {
+      "seed": 20261201,
+      "corrected": 7,
+      "introduced": 29,
+      "errors_one": 118,
+      "errors_three": 140
+    },
+    {
+      "seed": 20261202,
+      "corrected": 5,
+      "introduced": 11,
+      "errors_one": 123,
+      "errors_three": 129
+    },
+    {
+      "seed": 20261203,
+      "corrected": 4,
+      "introduced": 11,
+      "errors_one": 131,
+      "errors_three": 138
+    },
+    {
+      "seed": 20261204,
+      "corrected": 10,
+      "introduced": 16,
+      "errors_one": 128,
+      "errors_three": 134
+    },
+    {
+      "seed": 20261205,
+      "corrected": 8,
+      "introduced": 15,
+      "errors_one": 134,
+      "errors_three": 141
+    },
+    {
+      "seed": 20261206,
+      "corrected": 6,
+      "introduced": 23,
+      "errors_one": 126,
+      "errors_three": 143
+    },
+    {
+      "seed": 20261207,
+      "corrected": 2,
+      "introduced": 16,
+      "errors_one": 126,
+      "errors_three": 140
+    },
+    {
+      "seed": 20261208,
+      "corrected": 11,
+      "introduced": 16,
+      "errors_one": 130,
+      "errors_three": 135
+    },
+    {
+      "seed": 20261209,
+      "corrected": 7,
+      "introduced": 14,
+      "errors_one": 130,
+      "errors_three": 137
+    },
+    {
+      "seed": 20261210,
+      "corrected": 10,
+      "introduced": 13,
+      "errors_one": 123,
+      "errors_three": 126
+    }
+  ],
+  "by_class": [
+    {
+      "group": "Probable AD",
+      "n_records": 73,
+      "corrected": 1.5,
+      "introduced": 1.4,
+      "both_correct": 56.3,
+      "both_wrong": 13.8
+    },
+    {
+      "group": "Healthy control",
+      "n_records": 275,
+      "corrected": 5.5,
+      "introduced": 15.0,
+      "both_correct": 148.4,
+      "both_wrong": 106.1
+    }
+  ],
+  "by_uncertainty": [
+    {
+      "group": "Near threshold (training 25% margin)",
+      "record_evaluations": 874,
+      "correction_rate": 0.07780320366132723,
+      "introduction_rate": 0.17391304347826086,
+      "mean_brier_change": 0.0022763420997217055
+    },
+    {
+      "group": "Outside margin",
+      "record_evaluations": 2606,
+      "correction_rate": 0.0007674597083653108,
+      "introduction_rate": 0.004604758250191865,
+      "mean_brier_change": 0.002430813159650781
+    }
+  ],
+  "stability": {
+    "ever_corrected": 37,
+    "ever_harmed": 69,
+    "corrected_at_least_8_of_10": 0,
+    "harmed_at_least_8_of_10": 1,
+    "both_directions_across_splits": 22
+  },
+  "standardized_coefficient_summary": {
+    "PTAU217": {
+      "median": 1.0248911973205315,
+      "min": 0.7493262111217561,
+      "max": 1.4275423665092353,
+      "positive_folds": 50
+    },
+    "GFAP": {
+      "median": 0.09488932643340592,
+      "min": -0.14215858678626309,
+      "max": 0.22879107320049305,
+      "positive_folds": 39
+    },
+    "NFL": {
+      "median": 0.03619279378399687,
+      "min": -0.14564693017388072,
+      "max": 0.18319138470607665,
+      "positive_folds": 32
+    }
+  }
+}

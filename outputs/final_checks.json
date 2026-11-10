@@ -1,0 +1,131 @@
+{
+  "seed": 20261201,
+  "n": 348,
+  "positive": 73,
+  "calibration_bins": [
+    {
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 226,
+      "mean_probability": 0.11638062549286865,
+      "observed_fraction": 0.09734513274336283
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 87,
+      "mean_probability": 0.2755775813728736,
+      "observed_fraction": 0.3218390804597701
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.6000000000000001,
+      "n": 18,
+      "mean_probability": 0.4912225822279052,
+      "observed_fraction": 0.5
+    },
+    {
+      "lower": 0.6000000000000001,
+      "upper": 0.8,
+      "n": 8,
+      "mean_probability": 0.6954574999252738,
+      "observed_fraction": 0.75
+    },
+    {
+      "lower": 0.8,
+      "upper": 1.0,
+      "n": 9,
+      "mean_probability": 0.8921885611401719,
+      "observed_fraction": 0.8888888888888888
+    }
+  ],
+  "subgroups": [
+    {
+      "group": "female",
+      "n": 203,
+      "positive": 39,
+      "negative": 164,
+      "auroc": 0.7301438398999375,
+      "brier": 0.131463582298348,
+      "sensitivity": 0.6923076923076923,
+      "specificity": 0.6524390243902439
+    },
+    {
+      "group": "male",
+      "n": 145,
+      "positive": 34,
+      "negative": 111,
+      "auroc": 0.8145204027556969,
+      "brier": 0.1342544049853403,
+      "sensitivity": 0.8823529411764706,
+      "specificity": 0.5945945945945946
+    },
+    {
+      "group": "age_under_75",
+      "n": 199,
+      "positive": 45,
+      "negative": 154,
+      "auroc": 0.7894660894660894,
+      "brier": 0.12629952600157035,
+      "sensitivity": 0.7777777777777778,
+      "specificity": 0.6493506493506493
+    },
+    {
+      "group": "age_75_plus",
+      "n": 149,
+      "positive": 28,
+      "negative": 121,
+      "auroc": 0.7378984651711924,
+      "brier": 0.14107644466527847,
+      "sensitivity": 0.7857142857142857,
+      "specificity": 0.6033057851239669
+    }
+  ],
+  "observed_auroc": 0.7705105853051057,
+  "negative_control": {
+    "n_permutations": 25,
+    "mean_auc": 0.4939098381070983,
+    "range": [
+      0.407173100871731,
+      0.5858530510585305
+    ],
+    "all_aucs": [
+      0.4792029887920299,
+      0.41474470734744706,
+      0.5619925280199253,
+      0.4922540473225404,
+      0.4174346201743462,
+      0.5858530510585305,
+      0.41509339975093407,
+      0.49075965130759647,
+      0.47750933997509337,
+      0.472826899128269,
+      0.45514321295143206,
+      0.502615193026152,
+      0.5314072229140723,
+      0.4588293897882939,
+      0.5844084682440847,
+      0.4838854296388544,
+      0.4628642590286426,
+      0.5200498132004981,
+      0.5067496886674969,
+      0.5134246575342465,
+      0.500024906600249,
+      0.407173100871731,
+      0.5239352428393524,
+      0.5246824408468245,
+      0.5648816936488169
+    ],
+    "interpretation": "Engineering sanity check, not a valid population-level permutation test for dependent synthetic records."
+  },
+  "demographics_only": {
+    "auroc": 0.5333997509339975,
+    "brier": 0.1656060617086142
+  },
+  "sklearn_version": "1.9.1",
+  "source_hashes": {
+    "demographics_diagnosis.csv": "b4d9c5cd2ec1837a1ff759f33227992d540c9a81dbaf5a33be111786c99237e0",
+    "biomarkers.csv": "3684fee60d173c0e9ed5765dfbb99a1ba49900a96638cb5ee8aef6ddecd19efd"
+  },
+  "limits": "Uncalibrated model; calibration/subgroups use one prespecified split, no inferential intervals. No fairness or clinical claims. Negative values retained; finite sentinels unresolved."
+}

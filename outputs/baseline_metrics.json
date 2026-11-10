@@ -1,0 +1,70 @@
+{
+  "status": "EXPLORATORY: units/sentinel conventions unconfirmed; synthetic-only evaluation",
+  "n": 348,
+  "positive": 73,
+  "negative": 275,
+  "seed": 20261108,
+  "sklearn": "1.9.1",
+  "numpy": "2.5.4",
+  "pandas": "3.1.1",
+  "files": {
+    "demographics_diagnosis.csv": "b4d9c5cd2ec1837a1ff759f33227992d540c9a81dbaf5a33be111786c99237e0",
+    "biomarkers.csv": "3684fee60d173c0e9ed5765dfbb99a1ba49900a96638cb5ee8aef6ddecd19efd"
+  },
+  "results": [
+    {
+      "model": "prevalence",
+      "features": [],
+      "auroc": 0.4917808219178082,
+      "average_precision": 0.20713444647539245,
+      "brier": 0.16578399742693425,
+      "sensitivity_at_0_5": 0.0,
+      "specificity_at_0_5": 1.0,
+      "fold_auroc": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "model": "PTAU217",
+      "features": [
+        "PTAU217"
+      ],
+      "auroc": 0.7773848069738482,
+      "average_precision": 0.5440131930640756,
+      "brier": 0.1313533911433126,
+      "sensitivity_at_0_5": 0.2465753424657534,
+      "specificity_at_0_5": 0.9781818181818182,
+      "fold_auroc": [
+        0.7866666666666666,
+        0.749090909090909,
+        0.8606060606060607,
+        0.7207792207792209,
+        0.748051948051948
+      ]
+    },
+    {
+      "model": "three_biomarkers",
+      "features": [
+        "PTAU217",
+        "GFAP",
+        "NFL"
+      ],
+      "auroc": 0.7698630136986302,
+      "average_precision": 0.5369158109562379,
+      "brier": 0.1324545973416331,
+      "sensitivity_at_0_5": 0.2465753424657534,
+      "specificity_at_0_5": 0.9781818181818182,
+      "fold_auroc": [
+        0.776969696969697,
+        0.7539393939393939,
+        0.863030303030303,
+        0.6961038961038961,
+        0.7376623376623377
+      ]
+    }
+  ]
+}
